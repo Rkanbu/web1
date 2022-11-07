@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" href="/in.css" rel="stylesheet">
+</head>
+<body>
+    <div class="parent">
+        <form><br>
+            <table cellpadding="5" cellspacing="8">
+                <tr>
+                    <td><label>User Name :</label></td>
+                    <td><input type="text" placeholder="Enter User Name" id="Uname"></td>
+                </tr>
+                <tr>
+                    <td><label>Password :</label></td>
+                    <td><input type="password" placeholder="Enter Password" id="Pw"></td>
+                </tr>
+                
+            </table>
+        </form>
+        <button class="submit" onclick="fun()">Submit</button><br><br>
+        <h3 class="id">User Name => Developer</h3>
+        <h3 class="id"> Password => Anbu </h3>
+    </div>
+    
+    
+
+<script>
+    function fun(){
+        var name = document.getElementById("Uname").value;
+        var pw = document.getElementById("Pw").value;
+        if(name == "Developer"&& pw == "Anbu"){
+            window.location.href="out.html"
+        }else{
+            alert("Check Your User name and Password")
+        }
+       
+    }
+</script>    
+</body>
+</html>
